@@ -1,6 +1,7 @@
 FROM alpine:3.13
 
-LABEL maintainer="Felix Wehnert <felix@wehnert.me>"
+LABEL originalCreator="Felix Wehnert <felix@wehnert.me>"
+LABEL maintainer="Steffen Blake <steffen@technically.fun>"
 
 ENV NGINX_VERSION 1.19.8
 
