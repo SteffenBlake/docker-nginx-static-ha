@@ -1,3 +1,5 @@
-cp -R /static /www
+#!/bin/ash
 
-nginx -g daemon off
+cp -R /static/* /www
+
+nginx -g "daemon off;"

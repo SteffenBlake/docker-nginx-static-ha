@@ -1,5 +1,5 @@
 $REPO = "steffenblake/nginx-static-ha"
-$VER = "1.0.0"
+$VER = "1.0.4"
 
 $ARCHLIST = @{
     arm = "arm/v7";
