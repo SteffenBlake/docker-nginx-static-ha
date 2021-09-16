@@ -6,7 +6,7 @@
 
 This command exposes an nginx server on port 8080 which serves the folder `/absolute/path/to/serve` from the host.
 
-One boot up this image copies all directories and files from `/absolute/path/to/serve` to its own internal `/www` directory. Thus once initialization is complete, modifications to `/absolute/path/to/serve` will **not** be reflected by, or impact, the served nginx directory. To 'refresh' the served files the docker image must be redeployed. This is conducive to a "high avialability" system where you want to perform rolling deployments, thus you can modify the static files and roll out a deployment without suffering any outages.
+On boot up this image copies all directories and files from `/absolute/path/to/serve` to its own internal `/www` directory. Thus once initialization is complete, modifications to `/absolute/path/to/serve` will **not** be reflected by, or impact, the served nginx directory. To 'refresh' the served files the docker image must be redeployed. This is conducive to a "high avialability" system where you want to perform rolling deployments, thus you can modify the static files and roll out a deployment without suffering any outages.
 
 If you want an instant reflected service that does not have this behavior, see the *original* `nginx-static` image that this repo is a fork of here: https://github.com/flashspys/docker-nginx-static
 
